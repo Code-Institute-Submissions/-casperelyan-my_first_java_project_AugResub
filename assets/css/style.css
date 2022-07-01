@@ -1,3 +1,62 @@
-body {
-    background:aqua;
+/*matching font chooosen Fjalla One for headers and Merriwaeather for regular paragraphs*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather:ital,wght@0,300;0,700;0,900;1,700&display=swap');
+
+body
+ {margin : 0;
+  padding: 0;
+  font-family: "Fjalla One", "Arial", "Helvetica", sans-serif;
+  font-weight: lighter;
+  font-kerning: auto;
+  color: #3a3a3a;
+ }
+
+ p {font-family: "Merriweather", "Times New Roman", "Times", serif;
+    font-size:large;
+    font-kerning: auto;
+}
+
+@media only screen and (max-width: 800px) 
+{p {font-size:larger}}
+
+@media only screen and (max-width: 800px) 
+{h1 {font-size: 60px;}}
+
+
+
+@media only screen and (max-width: 400px) 
+{p {font-size: medium;}}
+
+@media only screen and (max-width: 400px) 
+{h1 {font-size: 30px;}}
+
+
+
+.logo1 {
+    position: relative;
+    text-align: center;
+    width: 90%;
+    max-width: 180px;
+    height: auto;
+  }
+
+  header {
+    
+    text-align: center;
+    margin-left: 10px;
+    margin-top:30px
+} 
+
+.game-area {
+    background-color: whitesmoke;
+
+}
+
+.scores {
+    display: inline-block;
+    text-align: center;
+}
+
+.points-area {
+    text-align: center;
 }
