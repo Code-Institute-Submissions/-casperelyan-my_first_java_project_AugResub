@@ -9,6 +9,7 @@ body
   font-weight: lighter;
   font-kerning: auto;
   color: #3a3a3a;
+
  }
 
  p {font-family: "Merriweather", "Times New Roman", "Times", serif;
@@ -24,10 +25,10 @@ body
 
 
 
-@media only screen and (max-width: 400px) 
+@media only screen and (max-width: 415px) 
 {p {font-size: medium;}}
 
-@media only screen and (max-width: 400px) 
+@media only screen and (max-width: 415px) 
 {h1 {font-size: 30px;}}
 
 
@@ -49,11 +50,60 @@ body
 
 .game-area {
     background-color: whitesmoke;
+   margin-left: 90px;
+   margin-right: 90px;
+}
+
+.buttons-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:5px;
+
+    margin: 10px;
+    }
+
+
+.btn-a {
+    padding: 20px;
+    background-color: #3b9af9;
+    border-radius: 3px;
+   
+}
+
+.controls {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.start-btn {
+padding: 10px;
+margin-bottom: 5px;
+margin-right: 5px;
+background-color: #3b9af9;
+border-radius: 3px;
+}
+.next-btn {
+padding: 10px;
+margin-bottom: 5px;
+margin-left: 5px;
+background-color: #3b9af9;
+border-radius: 3px;
 
 }
 
+    
+
+#question {
+    text-align: center;
+    padding: 30px;
+    font-size: large;
+}
 .scores {
-    display: inline-block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
