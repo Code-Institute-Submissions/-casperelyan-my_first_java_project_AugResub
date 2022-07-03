@@ -12,7 +12,7 @@ body
 
  }
 
- p {font-family: "Merriweather", "Times New Roman", "Times", serif;
+p {font-family: "Merriweather", "Times New Roman", "Times", serif;
     font-size: 1.6rem;
     font-kerning: auto;
 }
@@ -25,17 +25,13 @@ h2 {
     font-size: clamp(1rem, 1rem + 0.5vw, 5rem);
 }
 
-#question {
-    font-size: 50px;
-}
-
 .logo1 {
     position: relative;
     text-align: center;
     width: clamp(3rem, 15rem);
     size: 80%;
     max-width: 200px;
-height: auto;
+    height: auto;
   }
 
   header {
@@ -65,8 +61,14 @@ height: auto;
 
 .btn-a {
     padding: 20px;
-    background-color: hsl(217, 83%, 49%);
-    border-radius: 3px;
+    background-image: linear-gradient(to right, #005C97 0%, #363795  51%, #005C97  100%);
+    transition: 0.4s;
+    background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+   
+    border-radius: 6px;
+    border-width: 2px;
     border-color: white;
     color: whitesmoke;
     font-family: "Fjalla One";
@@ -77,21 +79,25 @@ height: auto;
     padding: 10px 30px 10px 30px;
     margin-bottom: 5px;
     margin-right: 5px;
-    background-color: hsl(217, 83%, 49%);
+    background-color: hsl(222, 92%, 39%);
     border-color: white;
-    border-radius: 3px;
+    border-radius: 6px;
     color: whitesmoke;
     font-family: "Fjalla One";
     font-size: clamp(1rem, 1rem + 1vw, 4rem);
     }
     
-    .btn-b:hover {
+.btn-b:hover {
         border-color: hsl(217, 88%, 19%);
-      }
 
-    .btn-a:hover {
+    }
+
+.btn-a:hover {
         border-color: hsl(217, 88%, 19%);
-      }
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+    }
     
 .controls-buttons-area {
     display:flex;
@@ -99,32 +105,46 @@ height: auto;
     align-items: center;
     text-align: center;
     padding-top: 10px;
-}
+    }
 
 .points-area {
     margin: auto;
     display: grid;
-    
-}
+    }
 
 #question {
     text-align: center;
     padding-top:2rem;
     padding-bottom: 2rem;
-  
-}
+    }
 
 .scores {
     display:flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+    }
 
 .points-area {
     text-align: center;
     grid-template-columns: 1fr 1fr;
     column-gap: normal;
     margin: auto;
+    }
+
+
+.btn-a.wrong {
+    background-image: linear-gradient(to right, #e53935 0%, #e35d5b  51%, #e53935  100%);
+}
+      
+.btn-a.correct {
+    background-image: linear-gradient(to right, #1fc781 0%, #155a1e  51%, #1dd488  100%); 
 }
 
+
+         
+  
+    
+
+               
+    
