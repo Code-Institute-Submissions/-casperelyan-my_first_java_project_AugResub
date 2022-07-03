@@ -30,9 +30,18 @@ h2 {
     text-align: center;
     width: clamp(3rem, 15rem);
     size: 80%;
-    max-width: 200px;
+    max-width: 240px;
     height: auto;
   }
+
+ .flag-image {
+    position: relative;
+    text-align: center;
+    width: clamp(3rem, 15rem);
+    size: 80%;
+    max-width: 240px;
+    height: auto;
+ }
 
   header {
     
@@ -79,12 +88,13 @@ h2 {
     padding: 10px 30px 10px 30px;
     margin-bottom: 5px;
     margin-right: 5px;
-    background-color: hsl(222, 92%, 39%);
+    background-color: hsl(54, 82%, 47%);
     border-color: white;
     border-radius: 6px;
-    color: whitesmoke;
+    color: hsl(217, 88%, 19%);
     font-family: "Fjalla One";
-    font-size: clamp(1rem, 1rem + 1vw, 4rem);
+    font-weight: bold;
+    font-size: clamp(3rem, 1rem + 1vw, 4rem);
     }
     
 .btn-b:hover {
@@ -107,10 +117,15 @@ h2 {
     padding-top: 10px;
     }
 
-.points-area {
+#points-area {
     margin: auto;
     display: grid;
     }
+
+
+.hide {
+    display: none;
+}  
 
 #question {
     text-align: center;
