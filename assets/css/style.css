@@ -13,32 +13,29 @@ body
  }
 
  p {font-family: "Merriweather", "Times New Roman", "Times", serif;
-    font-size:large;
+    font-size: 1.6rem;
     font-kerning: auto;
 }
+/*responsive heading font size depending on screen resolution*/
+h1 {
+    font-size: clamp(1rem, 1rem + 2vw, 9rem);
+}
 
-@media only screen and (max-width: 800px) 
-{p {font-size:larger}}
+h2 {
+    font-size: clamp(1rem, 1rem + 0.5vw, 5rem);
+}
 
-@media only screen and (max-width: 800px) 
-{h1 {font-size: 60px;}}
-
-
-
-@media only screen and (max-width: 415px) 
-{p {font-size: medium;}}
-
-@media only screen and (max-width: 415px) 
-{h1 {font-size: 30px;}}
-
-
+#question {
+    font-size: 50px;
+}
 
 .logo1 {
     position: relative;
     text-align: center;
-    width: 90%;
-    max-width: 180px;
-    height: auto;
+    width: clamp(3rem, 15rem);
+    size: 80%;
+    max-width: 200px;
+height: auto;
   }
 
   header {
@@ -50,56 +47,73 @@ body
 
 .game-area {
     background-color: whitesmoke;
-   margin-left: 90px;
-   margin-right: 90px;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 60rem;
+   padding-left: 5rem;
+   padding-right: 5rem;
 }
 
 .buttons-grid {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap:5px;
-
-    margin: 10px;
+    gap:0.3rem;
+    margin: auto;
+    padding-bottom: 2rem;
     }
 
 
 .btn-a {
     padding: 20px;
-    background-color: #3b9af9;
+    background-color: hsl(217, 83%, 49%);
     border-radius: 3px;
-   
+    border-color: white;
+    color: whitesmoke;
+    font-family: "Fjalla One";
+    font-size: clamp(1rem, 1rem + 1vw, 4rem);
 }
 
-.controls {
+.btn-b {
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background-color: hsl(217, 83%, 49%);
+    border-color: white;
+    border-radius: 3px;
+    color: whitesmoke;
+    font-family: "Fjalla One";
+    font-size: clamp(1rem, 1rem + 1vw, 4rem);
+    }
+    
+    .btn-b:hover {
+        border-color: hsl(217, 88%, 19%);
+      }
+
+    .btn-a:hover {
+        border-color: hsl(217, 88%, 19%);
+      }
+    
+.controls-buttons-area {
     display:flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 10px;
 }
 
-.start-btn {
-padding: 10px;
-margin-bottom: 5px;
-margin-right: 5px;
-background-color: #3b9af9;
-border-radius: 3px;
-}
-.next-btn {
-padding: 10px;
-margin-bottom: 5px;
-margin-left: 5px;
-background-color: #3b9af9;
-border-radius: 3px;
-
-}
-
+.points-area {
+    margin: auto;
+    display: grid;
     
+}
 
 #question {
     text-align: center;
-    padding: 30px;
-    font-size: large;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+  
 }
+
 .scores {
     display:flex;
     justify-content: center;
@@ -109,4 +123,8 @@ border-radius: 3px;
 
 .points-area {
     text-align: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: normal;
+    margin: auto;
 }
+
