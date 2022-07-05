@@ -1,11 +1,16 @@
 console.log("Welcome to flag chalange");
 
-const startButton =document.getElementById("start-btn")
+
 const nextButton = document.getElementById("next-btn")
 const questionContainerElement = document.getElementById('question-container')
-
+const startButton =document.getElementById("start-btn")
 
 startButton.addEventListener("click", startQuiz)
+nextButton.addEventListener('click', () => {
+  currentQuestionIndex++
+  setNextQuestion()
+})
+
 
 
 function startQuiz() {
@@ -16,10 +21,14 @@ function startQuiz() {
         setNextQuestion()
       }
    
-
+      
 
 function setNextQuestion(){
-}
+    resetState()
+    showQuestion(shuffledQuestions[currentQuestionIndex])
+  }
+
+
 
 function selectAnswer(){
 
