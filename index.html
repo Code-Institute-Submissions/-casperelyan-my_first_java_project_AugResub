@@ -18,7 +18,6 @@
 
 </head>
 <body>
-    <script src="assets/js/script.js"></script>
     <header>
         <img src="https://res.cloudinary.com/dqoovwhgm/image/upload/v1656707771/code_institute_first_project/slider/gallery/favicon_flags_oa17zp.jpg"
             alt="logo flags" class="logo1"></a>
@@ -26,10 +25,9 @@
     </header>
 
     <div class="game-area">
-       <div id="question-container" class="hide">
-          <div id="question"><h2>Which country flags it is?
-            
-          </h2><img src="https://www.countryflags.com/wp-content/uploads/cameroon-flag-png-large.png"
+       <div id="questions-div" class="hiden">
+        <h2>Which country flags it is?</h2>
+          <div id="question"><img src="https://www.countryflags.com/wp-content/uploads/cameroon-flag-png-large.png"
           alt="flag" class="flag-image">
 
           </div>
@@ -41,15 +39,15 @@
             <button class="btn-a">Answer 4</button>
           </div>
         </div></div>
-        <div class="controls-buttons-area">
-          <button id="start-btn" class="start-btn btn-b">Start</button>
-          <button id="next-btn" class="next-btn btn-b hide">Next</button>
+        <div class="controls">
+          <button id="start" class="start-btn btn-b">Start</button>
+          <button id="next" class="next-btn btn-b hiden">Next</button>
         </div>
       </div>
-      <div id="points-area" class="hide">
+     <!--<div id="scores-area" class="">
 <p class="scores">Correct: <span id="good-responses">0</span></p>
 <p class="scores">Wrong: <span id="wrong-responses">0</span></p>
-    </div>
-    
+    </div>-->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
