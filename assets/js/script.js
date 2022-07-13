@@ -4,6 +4,7 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
+
 let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
@@ -14,7 +15,8 @@ nextButton.addEventListener('click', () => {
 
 function startGame() {
   startButton.classList.add('hide')
-  shuffledQuestions = questions.sort(() => Math.random() - .5)
+  
+  shuffledQuestions = questions.sort(() => Math.random() - .2)
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
   setNextQuestion()
@@ -76,28 +78,31 @@ function clearStatusClass(element) {
   element.classList.remove('wrong')
 }
 
-
-  const questions = [
-    {
-      imageURL:"https://www.countryflags.com/wp-content/uploads/cameroon-flag-png-large.png",
-      answers: [
-        { text: 'Mongolia', correct: true },
-        { text: 'Chad', correct: false },
-        { text: 'Maroko', correct: true },
-        { text: 'Finland', correct: true },
-      ]
-    },
-
-    {
-      imageURL:"https://www.countryflags.com/wp-content/uploads/cameroon-flag-png-large.png",
-      answers: [
-        { text: 'Mongolia', correct: true },
-        { text: 'Chad', correct: false },
-        { text: 'Maroko', correct: true },
-        { text: 'Finland', correct: true },
-      ]
-    },
-
-  ]
-      
-
+const questions = [
+  {
+    question: 'A red circle on a green background is a flag?',
+    answers: [
+      { text: 'Japan', correct: false },
+      { text: 'Bangladesh', correct: true },
+      {text: 'Cape Verde', correct: false },
+      {text: 'Tennesy', correct: false },
+    ]
+  },
+  {
+    question: 'The blue and white flag with the sun in the middle belongs to which country?',
+    answers: [
+      { text: 'Kiribati', correct: false },
+      { text: 'Argentina', correct: true },
+      { text: 'Costarica', correct: false },
+      { text: 'North Macedonia', correct: false },
+    ]
+  },
+  {
+    question: 'Which mythical animal is on the Welsh flag?',
+    answers: [
+      { text: 'Phoenix', correct: false },
+      { text: 'Serpent', correct: false },
+      { text: 'Dragon', correct: true },
+      { text: 'Griffin', correct: false }
+    ]
+  }, ]

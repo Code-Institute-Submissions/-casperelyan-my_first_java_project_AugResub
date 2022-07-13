@@ -1,89 +1,97 @@
 /*matching font chooosen Fjalla One for headers and Merriwaeather for regular paragraphs*/
 
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather:ital,wght@0,300;0,700;0,900;1,700&display=swap');
-
-body
- {margin : 0;
-  padding: 0;
-  font-family: "Fjalla One", "Arial", "Helvetica", sans-serif;
-  font-weight: lighter;
-  font-kerning: auto;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  color: #3a3a3a;
-
- }
-
-p {font-family: "Merriweather", "Times New Roman", "Times", serif;
-    font-size: 1.6rem;
+  
+  body {
+   padding: 0;
+    margin: auto;
+    font-family: "Fjalla One", "Arial", "Helvetica", sans-serif;
+    width: 100vw;
+    height: 100vh;
+ 
+    background-color: whitesmoke;
+ 
+  }
+  
+  p {font-family: "Merriweather", "Times New Roman", "Times", serif;
+    font-size:large;
     font-kerning: auto;
 }
-/*responsive heading font size depending on screen resolution*/
-h1 {
-    font-size: clamp(2rem, 1rem + 2vw, 9rem);
-}
-
-h2 {
-    font-size: clamp(2rem, 1rem + 0.5vw, 6rem);
-    text-align: center;
-    padding-top: 2rem;
-}
-
-.logo1 {
-    position: relative;
-    text-align: center;
-    width: clamp(3rem, 15rem);
-    size: 80%;
-    max-width: 240px;
-    height: auto;
-  }
-/* variables scope in java learned from YT*/
   body.correct {
-    --hue: var(--hue-correct);
+    background-color: green;
   }
   
   body.wrong {
-    --hue: var(--hue-wrong);
+  background-color: red;
   }
   
+header
+{
+    margin: auto;
+    text-align: center;
+}
+
+  .logo {
+  width: 70%;
+  max-width: 310px;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  justify-content: center;
+
+
+  
+  }
+
+
   .container {
     width: 800px;
+    margin: auto;
     max-width: 80%;
     background-color: white;
     border-radius: 5px;
     padding: 10px;
-    box-shadow: 0 0 10px 2px;
+   
   }
   
   .btn-grid {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    margin: 20px 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 16px 0;
   }
   
   .btn {
-    --hue: var(--hue-neutral);
-    border: 1px solid hsl(var(--hue), 100%, 30%);
-    background-color: hsl(var(--hue), 100%, 50%);
+   /*buttons style copied from https://gradientbuttons.colorion.com */
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Fjalla One", "Arial", "Helvetica", sans-serif;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-size: 1.3rem;
+    background-size: 200% auto;
+    color: whitesmoke;            
+    box-shadow: 0 0 20px #eee;
     border-radius: 5px;
-    padding: 5px 10px;
-    color: white;
-    outline: none;
+    display: block;
   }
-  
   .btn:hover {
-    border-color: black;
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
   }
-  
+ 
   .btn.correct {
-    --hue: var(--hue-correct);
-    color: black;
+    background-color: green;
+    
   }
   
   .btn.wrong {
-    --hue: var(--hue-wrong);
+    background-color: red;
   }
   
   .start-btn, .next-btn {
@@ -101,19 +109,3 @@ h2 {
   .hide {
     display: none;
   }
-
-/*.btn-a.wrong {
-    background-image: linear-gradient(to right, #e53935 0%, #e35d5b  51%, #e53935  100%);
-}
-      
-.btn-a.correct {
-    background-image: linear-gradient(to right, #1fc781 0%, #155a1e  51%, #1dd488  100%); 
-}*/
-
-
-         
-  
-    
-
-               
-    
