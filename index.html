@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-
+  
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Lucas M Czajkowski">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dqoovwhgm/image/upload/v1656707771/code_institute_first_project/slider/gallery/favicon_flags_oa17zp.jpg">
     <title>Know the flag challenge</title>
-
+    <script defer src="assets/js/script.js"></script>
 </head>
 <body>
     <header>
@@ -25,29 +25,29 @@
     </header>
 
     <div class="game-area">
-       <div id="questions-div" class="hiden">
-        <h2>Which country flags it is?</h2>
-          <div id="question"><img src="https://www.countryflags.com/wp-content/uploads/cameroon-flag-png-large.png"
-          alt="flag" class="flag-image">
+       <div id="questions-div" class="">
+        
 
           </div>
 
-          <div id="answer-buttons" class="buttons-grid">
-            <button class="btn-a">Answer 1</button>
-            <button class="btn-a">Answer 2</button>
-            <button class="btn-a">Answer 3</button>
-            <button class="btn-a">Answer 4</button>
-          </div>
-        </div></div>
+          <div class="question-area">
+            <div id="question-container" class="hiden">
+              <div id="question"><h2>Which country flags it is?</h2>
+                
+        </div>
+              <div id="answer-buttons" class="btn-grid">
+                <button class="btn-a">Answer 1</button>
+                <button class="btn-a">Answer 2</button>
+                <button class="btn-a">Answer 3</button>
+                <button class="btn-a">Answer 4</button>
+              </div>
+            </div>
         <div class="controls">
           <button id="start" class="start-btn btn-b">Start</button>
           <button id="next" class="next-btn btn-b hiden">Next</button>
         </div>
       </div>
-     <!--<div id="scores-area" class="">
-<p class="scores">Correct: <span id="good-responses">0</span></p>
-<p class="scores">Wrong: <span id="wrong-responses">0</span></p>
-    </div>-->
-    <script src="assets/js/script.js"></script>
+ 
+  
 </body>
 </html>

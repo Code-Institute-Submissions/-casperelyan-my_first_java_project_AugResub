@@ -8,6 +8,9 @@ body
   font-family: "Fjalla One", "Arial", "Helvetica", sans-serif;
   font-weight: lighter;
   font-kerning: auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   color: #3a3a3a;
 
  }
@@ -35,129 +38,77 @@ h2 {
     max-width: 240px;
     height: auto;
   }
-
- .flag-image {
-    position: relative;
-    text-align: center;
-    width: clamp(3rem, 15rem);
-    size: 80%;
-    max-width: 240px;
-    height: auto;
- }
-
-  header {
-    
-    text-align: center;
-    margin-left: 10px;
-    margin-top:30px
-} 
-
-.game-area {
-    background-color: whitesmoke;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: 60rem;
-   padding-left: 5rem;
-   padding-right: 5rem;
-}
-
-.buttons-grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:0.3rem;
-    margin: auto;
-    padding-bottom: 2rem;
-    }
-
-
-.btn-a {
-    padding: 20px;
-    background-image: linear-gradient(to right, #005C97 0%, #363795  51%, #005C97  100%);
-    transition: 0.4s;
-    background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
-   
-    border-radius: 6px;
-    border-width: 2px;
-    border-color: white;
-    color: whitesmoke;
-    font-family: "Fjalla One";
-    font-size: clamp(1rem, 1rem + 1vw, 4rem);
-}
-
-.btn-b {
-    padding: 10px 30px 10px 30px;
-    text-align: center;
-    margin-bottom: 5px;
-    margin-right: 5px;
-    background-color: hsl(54, 82%, 47%);
-    border-color: white;
-    border-radius: 6px;
-    color: hsl(217, 88%, 19%);
-    font-family: "Fjalla One";
-    font-weight: bold;
-    font-size: clamp(3rem, 1rem + 1vw, 4rem);
-    }
-    
-.btn-b:hover {
-        border-color: hsl(217, 88%, 19%);
-
-    }
-
-.btn-a:hover {
-        border-color: hsl(217, 88%, 19%);
-        background-position: right center;
-        color: #fff;
-        text-decoration: none;
-    }
-    
-.controls {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 10px;
-    }
-
-#points-area {
-    margin: auto;
+/* variables scope in java learned from YT*/
+  body.correct {
+    --hue: var(--hue-correct);
+  }
+  
+  body.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+  }
+  
+  .btn-grid {
     display: grid;
-    }
-
-
-.hiden {
-    display: none;
-}  
-
-#question {
-    text-align: center;
-    padding-top:2rem;
-    padding-bottom: 2rem;
-    }
-
-.scores-area {
-    display:flex;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+  }
+  
+  .btn:hover {
+    border-color: black;
+  }
+  
+  .btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+  }
+  
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .controls {
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    }
+  }
+  
+  .hide {
+    display: none;
+  }
 
-.points-area {
-    text-align: center;
-    grid-template-columns: 1fr 1fr;
-    column-gap: normal;
-    margin: auto;
-    }
-
-
-.btn-a.wrong {
+/*.btn-a.wrong {
     background-image: linear-gradient(to right, #e53935 0%, #e35d5b  51%, #e53935  100%);
 }
       
 .btn-a.correct {
     background-image: linear-gradient(to right, #1fc781 0%, #155a1e  51%, #1dd488  100%); 
-}
+}*/
 
 
          
