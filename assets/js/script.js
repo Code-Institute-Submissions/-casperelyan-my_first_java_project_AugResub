@@ -15,7 +15,7 @@ nextButton.addEventListener('click', () => {
 
 function startGame() {
   startButton.classList.add('hide')
-  
+
   shuffledQuestions = questions.sort(() => Math.random() - .2)
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('hide')
@@ -80,7 +80,7 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'A red circle on a green background is a flag?',
+    question: 'A red circle on a green background is a flag of ?',
     answers: [
       { text: 'Japan', correct: false },
       { text: 'Bangladesh', correct: true },
@@ -89,7 +89,7 @@ const questions = [
     ]
   },
   {
-    question: 'The blue and white flag with the sun in the middle belongs to which country?',
+    question: 'The blue and white striped flag with the sun in the middle belongs to which country?',
     answers: [
       { text: 'Kiribati', correct: false },
       { text: 'Argentina', correct: true },
@@ -105,4 +105,65 @@ const questions = [
       { text: 'Dragon', correct: true },
       { text: 'Griffin', correct: false }
     ]
-  }, ]
+  }, 
+
+  {
+    question: 'Which is the only country in the world to have a flag with more than four sides?',
+    answers: [
+      { text: 'Kiribatti', correct: false },
+      { text: 'Nepal', correct: true },
+      { text: 'Switzerland', correct: false },
+      { text: 'Poland', correct: false }
+    ]
+  }, 
+
+  {
+    question: 'Which animal will you find clutching a sword on the Sri Lankan flag?',
+    answers: [
+      { text: 'Bear', correct: false },
+      { text: 'Lion', correct: true },
+      { text: 'Cat', correct: false },
+      { text: 'Toger', correct: false }
+    ]
+  }, 
+
+  {
+    question: 'Which central African country has a bird on its flag?',
+    answers: [
+      { text: 'Uganda', correct: true },
+      { text: 'Congo', correct: false },
+      { text: 'Djibouti', correct: false },
+      { text: 'Rwanda', correct: false }
+    ]
+  }, 
+
+  {
+    question: 'Which animal is biting a snake in the centre of the Mexican flag?',
+    answers: [
+      { text: 'Tiger', correct: false },
+      { text: 'Lion', correct: false },
+      { text: 'Eagle', correct: true },
+      { text: 'Wolverine', correct: false }
+    ]
+  }, 
+
+  {
+    question: 'Which weapon will you find on the flag for Mozambique?',
+    answers: [
+      { text: 'A spear', correct: false },
+      { text: 'A cannon', correct: false },
+      { text: 'A machete', correct: false },
+      { text: 'An AK47', correct: true }
+    ]
+  }, 
+
+  {
+    question: 'The Albanian flag features an eagle - but how many heads has it got?',
+    answers: [
+      { text: '5', correct: false },
+      { text: '1', correct: false },
+      { text: '4', correct: false },
+      { text: '2', correct: true }
+    ]
+  }, 
+]

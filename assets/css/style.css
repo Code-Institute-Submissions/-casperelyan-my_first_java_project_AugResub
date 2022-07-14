@@ -25,6 +25,7 @@
   background-color: red;
   }
   
+
 header
 {
     margin: auto;
@@ -39,10 +40,7 @@ header
   padding: 20px;
   margin: auto;
   justify-content: center;
-
-
-  
-  }
+}
 
 
   .container {
@@ -50,8 +48,9 @@ header
     margin: auto;
     max-width: 80%;
     background-color: white;
-    border-radius: 5px;
-    padding: 10px;
+    
+    border-radius: 10px;
+    padding: 35px;
    
   }
   
@@ -59,14 +58,14 @@ header
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
-    margin: 16px 0;
+    margin: auto;
   }
   
   .btn {
    /*buttons style copied from https://gradientbuttons.colorion.com */
     background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
-    margin: 10px;
-    padding: 15px 45px;
+    padding: 20px 35px;
+    margin-bottom: 5px;
     text-align: center;
     font-weight: bold;
     font-family: "Fjalla One", "Arial", "Helvetica", sans-serif;
@@ -85,19 +84,23 @@ header
     text-decoration: none;
   }
  
+
   .btn.correct {
-    background-color: green;
+        background-image: linear-gradient(to right, #59c83b 0%, #39562e  51%, #52c234  100%);
+        transition: 0.5s;
     
   }
   
   .btn.wrong {
-    background-color: red;
+        background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+        transition: 0.5s;
   }
   
   .start-btn, .next-btn {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 12px 23px;
+    margin-top: 12px;
   }
   
   .controls {
@@ -108,4 +111,11 @@ header
   
   .hide {
     display: none;
+  }
+
+  #question {
+    font-size: clamp(1.2rem, 1rem + 10vw, 1.7rem);
+    text-align: center;
+    padding: 10px 3px 25px 3px;
+
   }
