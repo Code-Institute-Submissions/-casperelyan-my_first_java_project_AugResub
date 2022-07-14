@@ -33,9 +33,12 @@ Chrome Dev tool did not return any spcific errors. Quiz desgin is fully responsi
 
 
 ### HTML :
-- no errors were returned when passing through the official [W3C validator](https://validator.w3.org/) All 3 pages returned no errors :
+- 1 error wes returned when passing through the official [W3C validator](https://validator.w3.org/) 
 
-![W3CValidator](https://res.cloudinary.com/dqoovwhgm/image/upload/v1653604399/code_institute_first_project/slider/readMe/html_testing_eool7t.jpg)
+![W3CValidator](https://res.cloudinary.com/dqoovwhgm/image/upload/v1657793633/code_institute_first_project/slider/gallery/Screenshot_2022-07-14_at_12.13.15_qrp3rq.png)
+
+Hovewer the stray end tag could not be located in the code. 
+
 
 ### CSS :
 - no errors were found when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/) validator :
