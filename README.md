@@ -1,108 +1,124 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Quiz Logo](https://res.cloudinary.com/dqoovwhgm/image/upload/v1657760641/code_institute_first_project/slider/gallery/flags_challengo_logo_rdm_yqgms5.png)
 
-Welcome Lucas,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# What is this quiz about : 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+This is a simple Quiz in which the user answers questions about the national flags.
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![PageScrenshots](https://res.cloudinary.com/dqoovwhgm/image/upload/v1657760770/code_institute_first_project/slider/gallery/Screenshot_2022-07-14_at_03.05.53_hyfzfr.png)
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+# Design : 
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+# Features :
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The project consists of the main page divided into 3 and actually 4 separate sections. The animated main slide, the text part describing the characteristics of the architectural style called brutalism, the part where the visitor can see subjective choose of 5 examples of the most interesting brutalist architecture in Europe, and the created by author map of brutalist buildings in Ireland. The portal also includes two additional subpages - photo gallerie and registration form for architecture photography workshops.
 
-To log into the Heroku toolbelt CLI:
+* ## Navigation bar :
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The navigation menu allows the user to select individual subpages without the need to use the back button in the browser. On the left side there is a logo with a link that also takes to the home page. The menu item is highlighted in blue when the user hovers the cursor over it.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![NavigationBar](https://res.cloudinary.com/dqoovwhgm/image/upload/v1653575622/code_institute_first_project/slider/readMe/navigation_bar_it80r3.jpg)
 
-------
+* ## Home page image slider:
 
-## Release History
+The main page includes slider composed from photos where the viewer can see brutalist-style buildings located in Dublin. Each photo has caption with a building name. However, the user cannot manually choose the order in which the photos are presented. Photos are displayed in a loop. After presenting the last, the slider returns to the first position.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![MainSlider](https://res.cloudinary.com/dqoovwhgm/image/upload/v1653575919/code_institute_first_project/slider/readMe/main_page_slider_of5gie.jpg)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* ## What is brutalism section:
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+This part of the page, divided into six columns, introduces the user to the definition of an architectural style called brutalism. In the center there is also a graphic matching the website design with a very characteristic building - water tower on the campus of the University City of Dublin. The page section is fully scalable and is displayed on mobile devices as one column - one block of text.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![BrutalismDefinition](https://res.cloudinary.com/dqoovwhgm/image/upload/v1653576962/code_institute_first_project/slider/readMe/whats_brutalism_wuyjfh.jpg)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* ## A subjective choice of brutalist architecture in Europe:
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+In this part, the designer of the site chose, in his opinion, the most characteristic buildings of the brutalist style in Europe. The section consists of 5 black and white photos. The photo changes to color when user move cursor over it. The designer idea  was that the first photo should show the general shape / block of the building and the second, colored one, focuses on characteristic detail of a given structure. Below the photo there is the name of the building, its location and the "Discover more" button. The button opens the Wikipedia page (or other available source) where the user can learn more about the structure.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![BrutalismInEurope](https://res.cloudinary.com/dqoovwhgm/image/upload/v1653578252/code_institute_first_project/slider/readMe/brutalisminEurope_bilu5k.jpg)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* ## Google Map with the location of known or less known brutalist buildings in Ireland:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+This part features a map of Ireland with the location of known brutalist buildings. Map created by the website designer in the [Google My Maps](www.google.com/maps/about/mymaps). The design of the map and its colors have been matched to the design of the website as much as the customization tools provided by Google allows it. The choice of buildings is suggestive and based solely on the knowledge of the designer and is certainly not complete. The designer would like to expand the functionality of this map in the future so that the user can add new buildings to the list.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![CustomGoogleMaps](https://res.cloudinary.com/dqoovwhgm/image/upload/v1653601835/code_institute_first_project/slider/readMe/maps_brut_t9asfm.gif)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* ## Last but not least - footer :
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+The simple design of the footer makes it easy to read on any mobile device. The footer contains links to social media in the form of explicitly recoganizble icons. Links to Twitter and Insyagram are connected to live accounts that belongs to the website designer on similar topics. Facebook link is not connected to any account. In addition, there is also a link that allows user send an email with a predefined subject.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Footer](https://res.cloudinary.com/dqoovwhgm/image/upload/v1653602027/code_institute_first_project/slider/readMe/footer_r3swjs.jpg)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* ## Gallery page :
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+The Gallery subpage feature pictures of brutalist-style buildings taken by a website designer in Dublin. Gallery has a simple layout based on a masonry design known from Instagram. The gallery does not have any additional functionality. Each photo has caption with the name of the building. Clicking on the photo, open the photo in a full resolution on a new page. Gallery is fully responsive. 
 
-------
+![Gallery](https://res.cloudinary.com/dqoovwhgm/image/upload/v1653606801/code_institute_first_project/slider/readMe/gallery_ieg0tn.jpg)
 
-## FAQ about the uptime script
+* ## Photowalks page: 
 
-**Why have you added this script?**
+On this page, the user has the opportunity to provide his personal data, answer to a few questions and sign up for an architecture photography workshop. The user may also attach a photo of the architecture he made. The design of this page is fully responsive, but the appearance of the form should be visually refined, because on mobile devices with a low-resolution screen, the form does not look aesthetically appealing. The designer is aware of this underdevelopment, but he wanted to ensure that each element of the form harmonized with the appearance of the page and, unfortunately, he could not fully cope with adjusting the appearance of the form to screens with lower resolution.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+# Testing:
 
-**How will this affect me?**
+All active links work as they should and lead to the right places, with the exception of the photo gallery, where only the photo in the first row opens in full resolution after clicking. This feature requires some fine-tuning. At the moment the pictures open in full screen in a new webbrowser tab and are easy to download by user. Website desingener would like to block this posibility in the future.
+The website is fully responsive thanks to the use of CSS media queries. However, the design should be refined in order to improve the visual experience of the user visiting the website from mobile devices.
+The Developer Tools available in Chrome were used to check how the website is displayed on mobile devices. The website was tested in Chrome Version 101.0.4951.64  and Safari Version 15.4 on macOS Catalina system. Those browsers have the largest market share (over 84% - source: https://gs.statcounter.com/browser-market-share).
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+* ## Validator Testing:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### HTML :
+- no errors were returned when passing through the official [W3C validator](https://validator.w3.org/) All 3 pages returned no errors :
 
-**So….?**
+![W3CValidator](https://res.cloudinary.com/dqoovwhgm/image/upload/v1653604399/code_institute_first_project/slider/readMe/html_testing_eool7t.jpg)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### CSS :
+- no errors were found when passing through the official [Jigsaw](https://jigsaw.w3.org/css-validator/) validator :
 
-**Can I opt out?**
+![CSSJigsaw](https://res.cloudinary.com/dqoovwhgm/image/upload/v1653604399/code_institute_first_project/slider/readMe/css_testing_tyjjka.jpg)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Accesability :
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+The website accessibility was tested using the [Lighthouse](https://developers.google.com/web/tools/lighthouse) application available in Developer Tools in the Chrome Version 101.0.4951.64 browser. The generated report showed 100 points out of 100 possible.
 
-**Anything more?**
+![AccessibilityRaport](https://res.cloudinary.com/dqoovwhgm/image/upload/v1653605541/code_institute_first_project/slider/readMe/lighhouse_testing_odyq4z.jpg)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+# Unfixed Bugs :
 
-Happy coding!
+Project doesn't have any known Unfixed Bugs. The project requires, however, visual refinement, especially in terms of adapting the website to display on mobile devices. The designer, as a person with little experience, designed this website on his 15-inch laptop and an additional 24-inch screen and then added a media query to optimize the appearance of the website on mobile devices. The designer does not consider this to be the best approach. After experience with this project, he would definitely prefer to focus on designing the mobile version first and add media query later or even better option is proabaly to produce two separate version of the same portal. 
+The only element that does not fully work are unsupported links to photos in the gallery. But it is intentional because designer does not like how the photos are opening in a full resolution after clicking on the thumbnail. This functionality needs to be refined.
+
+# Credits :
+
+### Content :
+
+The homepage uses an excerpt from the article from the following sources:
+[Wikipedia](https://en.wikipedia.org/wiki/Brutalist_architecture) |
+[All That’s Interesting](https://allthatsinteresting.com/brutalism) |
+[My Modern Met](https://mymodernmet.com/brutalist-architecture/) |
+
+The icons in the footer and home page were taken from [Font Awesome](https://fontawesome.com/)
+
+In writing the code, countless video tutorials on YouTube were also used, including: 
+[1](https://www.youtube.com/watch?v=hRyDECs2N8I&t=330s), [2](https://www.youtube.com/watch?v=1CZhGDU5cWM),
+[3](https://www.youtube.com/watch?v=QXFd95X08uA), [4](https://www.youtube.com/watch?v=ZRIhvtbdQWM), 
+[5](https://www.youtube.com/watch?v=rg7Fvvl3taU&t=1423s), [6](https://www.youtube.com/watch?v=RuJyYiRttpI) and many more. 
+
+### Media :
+
+All photos used in the project were made by Lucas M Czajkowski, the website designer.
+Except for the following photos:
+- Central Post Office in Macedonia on home page, photo taken from [Brutalism Online](http://brutalism.online/brutalist-buildings/39-macedonia/396-central-post-office-skopje-macedonia)
+- Banner photo on Photowalks page, photo taken from [Resource](http://resourcemagonline.com/2018/10/who-do-i-have-to-be-to-make-money-from-stock-photography/93084/)
+
+The graphic on the main page depicted the UCD water tower and the banners on the subpages were made by the website designer using photos from the above-mentioned sources.
+
+The Google Map listing the brutalist style buildings in Ireland was created by 
+the website designer using [Google My Maps](https://www.google.com/maps/about/mymaps/)
