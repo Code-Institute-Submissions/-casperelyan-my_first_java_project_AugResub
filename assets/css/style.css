@@ -57,13 +57,13 @@ header
   .btn-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8px;
+    gap: 7px;
     margin: auto;
   }
   
   .btn {
    /*buttons style copied from https://gradientbuttons.colorion.com */
-    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    background-image: linear-gradient(to right, #0973be 0%, #12D8FA  51%, #1FA2FF  100%);
     padding: 20px 35px;
     margin-bottom: 5px;
     text-align: center;
@@ -71,7 +71,7 @@ header
     font-family: "Fjalla One", "Arial", "Helvetica", sans-serif;
     text-transform: uppercase;
     transition: 0.5s;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     background-size: 200% auto;
     color: whitesmoke;            
     box-shadow: 0 0 20px #eee;
