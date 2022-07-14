@@ -14,11 +14,11 @@ nextButton.addEventListener('click', () => {
 })
 
 function startGame() {
-  startButton.classList.add('hide')
+  startButton.classList.add('no-display')
 
   shuffledQuestions = questions.sort(() => Math.random() - .2)
   currentQuestionIndex = 0
-  questionContainerElement.classList.remove('hide')
+  questionContainerElement.classList.remove('no-display')
   setNextQuestion()
 }
 
@@ -43,7 +43,7 @@ function showQuestion(question) {
 
 function resetState() {
   clearStatusClass(document.body)
-  nextButton.classList.add('hide')
+  nextButton.classList.add('no-display')
   while (answerButtonsElement.firstChild) {
     answerButtonsElement.removeChild(answerButtonsElement.firstChild)
   }
@@ -57,10 +57,10 @@ function selectAnswer(e) {
     setStatusClass(button, button.dataset.correct)
   })
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
-    nextButton.classList.remove('hide')
+    nextButton.classList.remove('no-display')
   } else {
     startButton.innerText = 'Restart'
-    startButton.classList.remove('hide')
+    startButton.classList.remove('no-display')
   }
 }
 
@@ -163,7 +163,7 @@ const questions = [
       { text: '5', correct: false },
       { text: '1', correct: false },
       { text: '4', correct: false },
-      { text: '2', correct: true }
+      { text: '2', correct: true },
     ]
   }, 
 ]
