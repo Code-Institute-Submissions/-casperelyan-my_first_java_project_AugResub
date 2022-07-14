@@ -53,8 +53,8 @@ The website accessibility was tested using the [Lighthouse](https://developers.g
 
 # Unfixed Bugs :
 
-Project doesn't have any known Unfixed Bugs. The project however required futher develempemnt. 
-Score counter shoud be added so user can have better experince by knowing the final correct and wrong answers. Also time shoud be added so it will make the Quiz more challanegins and will prevent user from searching a proper answer in Google. To make the quiz fun more set of question should be also created. 
+Project doesn't have any known Unfixed Bugs. The project however requires futher development. 
+Score counter should be added so user will have better experience by knowing the final correct and wrong answers. Also timee should be added so it will make the Quiz more challenging by prevents user from searching a proper answer in Google. To make the quiz fun more set of question should be also created. 
 
 # Credits :
 
