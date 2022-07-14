@@ -12,16 +12,17 @@ nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
+//function start game is a adding and removinf no-display class to buttons and should also shuffle question order//
 
 function startGame() {
   startButton.classList.add('no-display')
 
-  shuffledQuestions = questions.sort(() => Math.random() - .2)
+  shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   questionContainerElement.classList.remove('no-display')
   setNextQuestion()
 }
-
+//functon is reseting the answered question//
 function setNextQuestion() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
@@ -63,7 +64,7 @@ function selectAnswer(e) {
     startButton.classList.remove('no-display')
   }
 }
-
+//ths function is adding colors to buttons and background - red when wrong answer, green when correct is choosen//
 function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
@@ -77,7 +78,7 @@ function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
 }
-
+//Arrays with question samples//
 const questions = [
   {
     question: 'A red circle on a green background is a flag of ?',
