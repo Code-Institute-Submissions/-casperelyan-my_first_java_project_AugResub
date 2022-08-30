@@ -60,7 +60,7 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('no-display')
   } else {
-    startButton.innerText = 'Restart'
+    startButton.innerText = 'Start Again'
     startButton.classList.remove('no-display')
   }
 }
