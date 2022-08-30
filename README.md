@@ -8,6 +8,7 @@ This is a simple Quiz in which the user answers questions about the national fla
 
 ![PageScrenshots](https://res.cloudinary.com/dqoovwhgm/image/upload/v1657760770/code_institute_first_project/slider/gallery/Screenshot_2022-07-14_at_03.05.53_hyfzfr.png)
 
+[Here is life version of my project](https://github.com/casperelyan/my_first_java_project.git)
 
 
 # Design : 
@@ -22,6 +23,13 @@ The project actually consists of two elements. Home page with a Start button tha
 ![Questions](https://res.cloudinary.com/dqoovwhgm/image/upload/v1657790924/code_institute_first_project/slider/gallery/answers_jiru1u.jpg)
 ![GoodAnswer](https://res.cloudinary.com/dqoovwhgm/image/upload/v1657790925/code_institute_first_project/slider/gallery/good_answer_b41pie.jpg)
 
+# Deployment : 
+
+[GitHub] was used for the app deployment. 
+Template prvided by Code Institite template used in GitHub. 
+
+
+
 # Testing:
 
 All active links work as they should and lead to the right places. 
@@ -33,11 +41,9 @@ Chrome Dev tool did not return any spcific errors. Quiz desgin is fully responsi
 
 
 ### HTML :
-- 1 error wes returned when passing through the official [W3C validator](https://validator.w3.org/) 
+- no errors were found when passing through the official [W3C validator](https://validator.w3.org/) 
 
-![W3CValidator](https://res.cloudinary.com/dqoovwhgm/image/upload/v1657793633/code_institute_first_project/slider/gallery/Screenshot_2022-07-14_at_12.13.15_qrp3rq.png)
-
-Hovewer the stray end tag could not be located in the code. 
+![W3CValidator](https://res.cloudinary.com/dqoovwhgm/image/upload/v1661849254/code_institute_first_project/slider/javaproject_hmtl_vvalidator_mm305k.png)
 
 
 ### CSS :
