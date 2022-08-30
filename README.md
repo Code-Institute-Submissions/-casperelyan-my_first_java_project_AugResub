@@ -27,7 +27,11 @@ The project actually consists of two elements. Home page with a Start button tha
 
 [GitHub] was used for the app deployment. 
 Template prvided by Code Institite template used in GitHub. 
-
+Steps of deployment:
+- in GitHub go to Settings tab
+- in Stttings tab go to GitHub pages section
+- selected the branch name for the code and click save
+- the website live link is availiable do use after few minutes 
 
 
 # Testing:
