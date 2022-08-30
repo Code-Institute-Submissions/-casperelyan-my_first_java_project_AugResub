@@ -8,7 +8,8 @@ This is a simple Quiz in which the user answers questions about the national fla
 
 ![PageScrenshots](https://res.cloudinary.com/dqoovwhgm/image/upload/v1657760770/code_institute_first_project/slider/gallery/Screenshot_2022-07-14_at_03.05.53_hyfzfr.png)
 
-[Here is life version of my project](https://casperelyan.github.io/my_first_java_project/)
+[Here is live
+ version of my project](https://casperelyan.github.io/my_first_java_project/)
 
 
 # Design : 
