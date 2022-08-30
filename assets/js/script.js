@@ -60,7 +60,7 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('no-display')
   } else {
-    startButton.innerText = 'Start Again'
+    startButton.innerText = 'Restart Quiz' //it will restart the game again if there is no more question availiable
     startButton.classList.remove('no-display')
   }
 }
@@ -124,7 +124,7 @@ const questions = [
       { text: 'Bear', correct: false },
       { text: 'Lion', correct: true },
       { text: 'Cat', correct: false },
-      { text: 'Toger', correct: false }
+      { text: 'Tiger', correct: false }
     ]
   }, 
 
