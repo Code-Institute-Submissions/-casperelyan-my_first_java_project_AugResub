@@ -31,12 +31,12 @@ At the end of the Quiz user can restart the game with new random questions order
 # Deployment : 
 
 [GitHub](https://github.com/) was used for the app deployment. 
-Template prvided by Code Institite template used in GitHub. 
+Template provided by Code Institite used in GitHub. 
 Steps of deployment:
 - in GitHub go to Settings tab
-- in Stttings tab go to GitHub pages section
-- selected the branch name for the code and click save
-- the website live link is availiable do use after few minutes 
+- in Settings tab go to GitHub pages section
+- select the branch name for the code and click save
+- the website live link is availiable for use after few minutes 
 
 
 # Testing:
