@@ -8,12 +8,11 @@ This is a simple Quiz in which the user answers questions about the national fla
 
 ![PageScrenshots](https://res.cloudinary.com/dqoovwhgm/image/upload/v1657760770/code_institute_first_project/slider/gallery/Screenshot_2022-07-14_at_03.05.53_hyfzfr.png)
 
-[Here is life version of my project](https://github.com/casperelyan/my_first_java_project.git)
+[Here is life version of my project](https://8000-casperelyan-myfirstjava-skg6381mf7o.ws-eu63.gitpod.io/)
 
 
 # Design : 
 Very simple designs. Logo in the middle and four buttons with answers to choose from. The same font as in the previous project was used.
-
 
 
 # Features :
@@ -23,9 +22,14 @@ The project actually consists of two elements. Home page with a Start button tha
 ![Questions](https://res.cloudinary.com/dqoovwhgm/image/upload/v1657790924/code_institute_first_project/slider/gallery/answers_jiru1u.jpg)
 ![GoodAnswer](https://res.cloudinary.com/dqoovwhgm/image/upload/v1657790925/code_institute_first_project/slider/gallery/good_answer_b41pie.jpg)
 
+
+At the end of the Quiz user can restart the game with new random questions order: 
+
+![EndQuiz](https://res.cloudinary.com/dqoovwhgm/image/upload/v1661853407/code_institute_first_project/slider/Screenshot_2022-08-30_at_11.56.34_ytsy0g.png)
+
 # Deployment : 
 
-[GitHub] was used for the app deployment. 
+[GitHub](https://github.com/) was used for the app deployment. 
 Template prvided by Code Institite template used in GitHub. 
 Steps of deployment:
 - in GitHub go to Settings tab
